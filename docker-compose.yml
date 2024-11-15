@@ -57,8 +57,6 @@ services:
         depends_on:
             graph-db:
                 condition: service_healthy
-            caddy:
-                condition: service_started
         extra_hosts:
             - "host.docker.internal:host-gateway"
 
